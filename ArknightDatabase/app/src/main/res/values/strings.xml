@@ -1,0 +1,15 @@
+<resources>
+	<string name="app_name">PRTS</string>
+	<string name="Image">image</string>
+	<string name="Character_name">Character name</string>
+	<string name="info">Info</string>
+	<string name="operators">Operators</string>
+	<string name="materials">Materials</string>
+	<string name="sanity">Sanity</string>
+	<string name="outfits">Outfits</string>
+	<string name="faction">Faction</string>
+	<string name="recruit">Recruit</string>
+	<string name="headhunt">Headhunt</string>
+	<string name="characters">Characters</string>
+	<string name="enemies">Enemies</string>
+</resources>
