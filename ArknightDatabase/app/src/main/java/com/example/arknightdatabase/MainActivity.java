@@ -3,6 +3,7 @@ package com.example.arknightdatabase;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView sanity = findViewById(R.id.Sanity);
-        ImageView character = findViewById(R.id.Characters);
+        ImageButton sanity = findViewById(R.id.Sanity);
+        ImageButton character = findViewById(R.id.Characters);
 
         sanity.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,12 +25,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-       /* character.setOnClickListener(new View.OnClickListener() {
+        character.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CharactersActivity.class);
                 startActivity(intent);
             }
-        }); */
+        });
     }
 }
