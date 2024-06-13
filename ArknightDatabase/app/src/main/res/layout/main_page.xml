@@ -90,7 +90,7 @@
 			android:orientation="vertical">
 
 			<ImageButton
-				android:id="@+id/Items"
+				android:id="@+id/Materials"
 				android:layout_width="100dp"
 				android:layout_height="100dp"
 				android:layout_marginStart="6dp"
@@ -165,7 +165,7 @@
 				android:layout_marginTop="6dp"
 				android:layout_marginEnd="6dp"
 				android:clickable="true"
-				android:contentDescription="@string/faction"
+				android:contentDescription="@string/factions"
 				android:focusable="true"
 				android:gravity="center"
 				android:scaleType="fitCenter"
@@ -177,7 +177,7 @@
 				android:layout_height="wrap_content"
 				android:layout_marginBottom="8dp"
 				android:gravity="center"
-				android:text="@string/faction"
+				android:text="@string/factions"
 				android:textSize="16sp" />
 		</LinearLayout>
 

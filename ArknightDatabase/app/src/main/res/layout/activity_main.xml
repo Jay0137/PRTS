@@ -16,6 +16,7 @@
 		android:orientation="vertical">
 
 		<ImageButton
+			android:id="@+id/LoginButton"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:contentDescription="@string/log_in"

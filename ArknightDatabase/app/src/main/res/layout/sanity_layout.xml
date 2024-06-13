@@ -9,6 +9,17 @@
 	android:layout_marginTop="16dp"
 	android:layout_marginEnd="16dp"
 	android:layout_marginBottom="16dp">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/sanity_analyzer"
+			android:textSize="20sp"/>
+	</LinearLayout>
 
 	<FrameLayout
 		android:layout_width="wrap_content"
