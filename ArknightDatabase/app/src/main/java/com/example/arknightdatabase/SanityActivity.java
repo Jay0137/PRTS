@@ -49,7 +49,7 @@ public class SanityActivity extends AppCompatActivity {
                 totalSanity = Integer.parseInt(totalSanityStr);
 
                 if (currentSanity >= totalSanity) {
-                    resultTextView.setText("Current sanity is above total sanity.");
+                    resultTextView.setText("Current sanity is the same or above total sanity.");
                 } else {
                     String result = analyzeDifference(currentSanity, totalSanity);
                     resultTextView.setText(result);

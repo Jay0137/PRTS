@@ -23,4 +23,5 @@
 	<string name="analyzer">Analyzer</string>
 	<string name="sanity_analyzer">Sanity Analyzer</string>
 	<string name="result">Result</string>
+	<string name="log_in">Please log in</string>
 </resources>
