@@ -12,4 +12,15 @@
 	<string name="headhunt">Headhunt</string>
 	<string name="characters">Characters</string>
 	<string name="enemies">Enemies</string>
+	<string name="algorithm">Algorithm</string>
+	<string name="logo">Logo</string>
+	<string name="right">Right</string>
+	<string name="left">Left</string>
+	<string name="zeros">0</string>
+	<string name="sanity_to_restore">Sanity to restore</string>
+	<string name="total_sanity">Total sanity</string>
+	<string name="current_sanity">Current Sanity</string>
+	<string name="analyzer">Analyzer</string>
+	<string name="sanity_analyzer">Sanity Analyzer</string>
+	<string name="result">Result</string>
 </resources>
