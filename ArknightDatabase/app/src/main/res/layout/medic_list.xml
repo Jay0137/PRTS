@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:layout_marginTop="16dp"
+	android:layout_marginBottom="16dp"
+	android:layout_marginStart="16dp"
+	android:layout_marginEnd="16dp">
+
+	<!--Back Button-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/backButton"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_marginStart="6dp"
+			android:layout_marginTop="6dp"
+			android:layout_marginEnd="6dp"
+			android:layout_marginBottom="6dp"
+			android:contentDescription="@string/back"
+			android:gravity="center"
+			android:scaleType="fitCenter"
+			android:src="@mipmap/back_button"
+			android:background="@drawable/border"
+			android:clipToOutline="true" />
+	</LinearLayout>
+
+	<!--First row of characters (texas)-->
+	<!--max 5 character por row-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<ImageButton
+				android:id="@+id/Texas"
+				android:layout_width="80dp"
+				android:layout_height="80dp"
+				android:layout_marginStart="6dp"
+				android:layout_marginTop="6dp"
+				android:layout_marginEnd="6dp"
+				android:clickable="true"
+				android:contentDescription="@string/sanity"
+				android:focusable="true"
+				android:gravity="center"
+				android:scaleType="fitCenter"
+				android:src="@mipmap/texas"
+				android:background="@drawable/border_0"
+				android:clipToOutline="true" />
+
+
+
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

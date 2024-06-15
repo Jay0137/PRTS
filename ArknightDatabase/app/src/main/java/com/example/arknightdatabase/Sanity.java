@@ -2,16 +2,15 @@ package com.example.arknightdatabase;
 
 import android.os.Bundle;
 import android.text.InputFilter;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SanityActivity extends AppCompatActivity {
+public class Sanity extends AppCompatActivity {
     private int currentSanity;
     private int totalSanity;
     private final int Countdown = 360; // standard time to recover 1 sanity
@@ -35,6 +34,7 @@ public class SanityActivity extends AppCompatActivity {
         EditText currentSanityText = findViewById(R.id.currentSanityText);
         Button analyzer = findViewById(R.id.analyzerButton);
         TextView resultTextView = findViewById(R.id.resultTextView);
+        ImageView back = findViewById(R.id.backButton);
 
         // Set input filter to limit the EditText fields to 3 digits
         InputFilter[] filters = new InputFilter[]{new InputFilter.LengthFilter(3)};
@@ -66,6 +66,14 @@ public class SanityActivity extends AppCompatActivity {
                 }
 
             }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+
         });
 
 

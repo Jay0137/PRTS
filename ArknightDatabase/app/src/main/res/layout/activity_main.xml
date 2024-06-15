@@ -9,20 +9,12 @@
 	android:gravity="center"
 	android:orientation="vertical">
 
-	<LinearLayout
+	<ImageButton
+		android:id="@+id/LoginButton"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:gravity="center"
-		android:orientation="vertical">
-
-		<ImageButton
-			android:id="@+id/LoginButton"
-			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			android:contentDescription="@string/log_in"
-			android:src="@mipmap/log_prts_text"
-			android:scaleType="fitCenter"
-			android:background="@color/transparent"/>
-
-	</LinearLayout>
+		android:background="@color/transparent"
+		android:contentDescription="@string/log_in"
+		android:scaleType="fitCenter"
+		android:src="@mipmap/log_prts_text" />
 </LinearLayout>

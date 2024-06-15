@@ -22,13 +22,33 @@
 			android:layout_marginTop="6dp"
 			android:layout_marginEnd="6dp"
 			android:layout_marginBottom="6dp"
+			android:background="@drawable/border"
+			android:clipToOutline="true"
 			android:contentDescription="@string/back"
 			android:gravity="center"
 			android:scaleType="fitCenter"
-			android:src="@mipmap/back_button"
-			android:background="@drawable/border"
-			android:clipToOutline="true" />
+			android:src="@mipmap/back_button" />
 	</LinearLayout>
+
+	<FrameLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="6dp"
+		android:layout_marginBottom="6dp">
+
+		<ImageView
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:layout_marginStart="6dp"
+			android:layout_marginTop="6dp"
+			android:layout_marginEnd="6dp"
+			android:layout_marginBottom="6dp"
+			android:background="@drawable/border"
+			android:clipToOutline="true"
+			android:contentDescription="@string/logo"
+			android:src="@mipmap/sanity" />
+	</FrameLayout>
 
 	<LinearLayout
 		android:layout_width="match_parent"
@@ -39,24 +59,6 @@
 		android:layout_marginBottom="6dp"
 		android:gravity="center_horizontal"
 		android:orientation="vertical">
-
-		<FrameLayout
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_gravity="center"
-			android:layout_marginTop="6dp"
-			android:layout_marginBottom="6dp">
-
-			<ImageView
-				android:layout_width="100dp"
-				android:layout_height="100dp"
-				android:layout_marginStart="6dp"
-				android:layout_marginTop="6dp"
-				android:layout_marginEnd="6dp"
-				android:layout_marginBottom="6dp"
-				android:contentDescription="@string/logo"
-				android:src="@mipmap/sanity" />
-		</FrameLayout>
 
 		<TextView
 			android:layout_width="wrap_content"

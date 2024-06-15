@@ -2,13 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:layout_marginStart="16dp"
+	android:orientation="vertical"
 	android:layout_marginTop="16dp"
-	android:layout_marginEnd="16dp"
 	android:layout_marginBottom="16dp"
-	android:gravity="center"
-	android:orientation="vertical">
+	android:layout_marginStart="16dp"
+	android:layout_marginEnd="16dp">
 
+	<!--Back button-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/backButton"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_marginStart="6dp"
+			android:layout_marginTop="6dp"
+			android:layout_marginEnd="6dp"
+			android:layout_marginBottom="6dp"
+			android:contentDescription="@string/back"
+			android:gravity="center"
+			android:scaleType="fitCenter"
+			android:src="@mipmap/back_button"
+			android:background="@drawable/border"
+			android:clipToOutline="true" />
+	</LinearLayout>
+
+	<!-- first row (Vanguard, Guard) -->
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -22,28 +43,27 @@
 			android:orientation="vertical">
 
 			<ImageButton
-				android:id="@+id/Sanity"
+				android:id="@+id/Vanguard"
 				android:layout_width="80dp"
 				android:layout_height="80dp"
 				android:layout_marginStart="6dp"
 				android:layout_marginTop="6dp"
 				android:layout_marginEnd="6dp"
+				android:background="@drawable/border"
 				android:clickable="true"
-				android:contentDescription="@string/sanity"
+				android:clipToOutline="true"
+				android:contentDescription="@string/vanguard"
 				android:focusable="true"
 				android:gravity="center"
 				android:scaleType="fitCenter"
-				android:src="@mipmap/sanity"
-				android:background="@drawable/border"
-				android:clipToOutline="true" />
+				android:src="@mipmap/vanguard" />
 
 			<TextView
-				android:id="@+id/SanityText"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginBottom="8dp"
 				android:gravity="center"
-				android:text="@string/sanity"
+				android:text="@string/vanguard"
 				android:textSize="16sp" />
 		</LinearLayout>
 
@@ -58,108 +78,32 @@
 			android:orientation="vertical">
 
 			<ImageButton
-				android:id="@+id/Operators"
+				android:id="@+id/Guard"
 				android:layout_width="80dp"
 				android:layout_height="80dp"
 				android:layout_marginStart="6dp"
 				android:layout_marginTop="6dp"
 				android:layout_marginEnd="6dp"
+				android:background="@drawable/border"
 				android:clickable="true"
-				android:contentDescription="@string/operators"
+				android:clipToOutline="true"
+				android:contentDescription="@string/guard"
 				android:focusable="true"
 				android:gravity="center"
 				android:scaleType="fitCenter"
-				android:src="@mipmap/operators"
-				android:background="@drawable/border"
-				android:clipToOutline="true" />
+				android:src="@mipmap/guard" />
 
 			<TextView
-				android:id="@+id/OperatorsText"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginBottom="8dp"
 				android:gravity="center"
-				android:text="@string/operators"
+				android:text="@string/guard"
 				android:textSize="16sp" />
 		</LinearLayout>
 	</LinearLayout>
 
-	<LinearLayout
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="6dp"
-		android:gravity="center"
-		android:orientation="horizontal">
-
-		<LinearLayout
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:gravity="center"
-			android:orientation="vertical">
-
-			<ImageButton
-				android:id="@+id/Materials"
-				android:layout_width="80dp"
-				android:layout_height="80dp"
-				android:layout_marginStart="6dp"
-				android:layout_marginTop="6dp"
-				android:layout_marginEnd="6dp"
-				android:clickable="true"
-				android:contentDescription="@string/materials"
-				android:focusable="true"
-				android:gravity="center"
-				android:scaleType="fitCenter"
-				android:src="@mipmap/items"
-				android:background="@drawable/border"
-				android:clipToOutline="true" />
-
-			<TextView
-				android:id="@+id/ItemsText"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="8dp"
-				android:gravity="center"
-				android:text="@string/materials"
-				android:textSize="16sp" />
-		</LinearLayout>
-
-		<LinearLayout
-			android:layout_width="10dp"
-			android:layout_height="match_parent"/>
-
-		<LinearLayout
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:gravity="center"
-			android:orientation="vertical">
-
-			<ImageButton
-				android:id="@+id/Outfits"
-				android:layout_width="80dp"
-				android:layout_height="80dp"
-				android:layout_marginStart="6dp"
-				android:layout_marginTop="6dp"
-				android:layout_marginEnd="6dp"
-				android:clickable="true"
-				android:contentDescription="@string/outfits"
-				android:focusable="true"
-				android:gravity="center"
-				android:scaleType="fitCenter"
-				android:src="@mipmap/outfit"
-				android:background="@drawable/border"
-				android:clipToOutline="true" />
-
-			<TextView
-				android:id="@+id/OutfitsText"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginBottom="8dp"
-				android:gravity="center"
-				android:text="@string/outfits"
-				android:textSize="16sp" />
-		</LinearLayout>
-	</LinearLayout>
-
+	<!-- second row (Sniper, Caster -->
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -174,28 +118,27 @@
 			android:orientation="vertical">
 
 			<ImageButton
-				android:id="@+id/Factions"
+				android:id="@+id/Sniper"
 				android:layout_width="80dp"
 				android:layout_height="80dp"
 				android:layout_marginStart="6dp"
 				android:layout_marginTop="6dp"
 				android:layout_marginEnd="6dp"
+				android:background="@drawable/border"
 				android:clickable="true"
-				android:contentDescription="@string/factions"
+				android:clipToOutline="true"
+				android:contentDescription="@string/sniper"
 				android:focusable="true"
 				android:gravity="center"
 				android:scaleType="fitCenter"
-				android:src="@mipmap/faction"
-				android:background="@drawable/border"
-				android:clipToOutline="true" />
+				android:src="@mipmap/sniper" />
 
 			<TextView
-				android:id="@+id/FactionsText"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginBottom="8dp"
 				android:gravity="center"
-				android:text="@string/factions"
+				android:text="@string/sniper"
 				android:textSize="16sp" />
 		</LinearLayout>
 
@@ -210,32 +153,32 @@
 			android:orientation="vertical">
 
 			<ImageButton
-				android:id="@+id/Enemies"
+				android:id="@+id/Caster"
 				android:layout_width="80dp"
 				android:layout_height="80dp"
 				android:layout_marginStart="6dp"
 				android:layout_marginTop="6dp"
 				android:layout_marginEnd="6dp"
+				android:background="@drawable/border"
 				android:clickable="true"
-				android:contentDescription="@string/enemies"
+				android:clipToOutline="true"
+				android:contentDescription="@string/caster"
 				android:focusable="true"
 				android:gravity="center"
 				android:scaleType="fitCenter"
-				android:src="@mipmap/enemy"
-				android:background="@drawable/border"
-				android:clipToOutline="true" />
+				android:src="@mipmap/caster" />
 
 			<TextView
-				android:id="@+id/EnemiesText"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginBottom="8dp"
 				android:gravity="center"
-				android:text="@string/enemies"
+				android:text="@string/caster"
 				android:textSize="16sp" />
 		</LinearLayout>
 	</LinearLayout>
 
+	<!-- third row (Medic, Defender)-->
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -250,28 +193,28 @@
 			android:orientation="vertical">
 
 			<ImageButton
-				android:id="@+id/Recruit"
+				android:id="@+id/Medic"
 				android:layout_width="80dp"
 				android:layout_height="80dp"
 				android:layout_marginStart="6dp"
 				android:layout_marginTop="6dp"
 				android:layout_marginEnd="6dp"
+				android:background="@drawable/border"
 				android:clickable="true"
-				android:contentDescription="@string/recruit"
+				android:clipToOutline="true"
+				android:contentDescription="@string/medic"
 				android:focusable="true"
 				android:gravity="center"
 				android:scaleType="fitCenter"
-				android:src="@mipmap/recruit"
-				android:background="@drawable/border"
-				android:clipToOutline="true" />
+				android:src="@mipmap/medic" />
 
 			<TextView
-				android:id="@+id/RecruitText"
+				android:id="@+id/MedicText"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginBottom="8dp"
 				android:gravity="center"
-				android:text="@string/recruit"
+				android:text="@string/medic"
 				android:textSize="16sp" />
 		</LinearLayout>
 
@@ -286,31 +229,104 @@
 			android:orientation="vertical">
 
 			<ImageButton
-				android:id="@+id/Headhunt"
+				android:id="@+id/Defender"
 				android:layout_width="80dp"
 				android:layout_height="80dp"
 				android:layout_marginStart="6dp"
 				android:layout_marginTop="6dp"
 				android:layout_marginEnd="6dp"
+				android:background="@drawable/border"
 				android:clickable="true"
-				android:contentDescription="@string/headhunt"
+				android:clipToOutline="true"
+				android:contentDescription="@string/defender"
 				android:focusable="true"
 				android:gravity="center"
 				android:scaleType="fitCenter"
-				android:src="@mipmap/headhunt"
-				android:background="@drawable/border"
-				android:clipToOutline="true" />
+				android:src="@mipmap/defender" />
 
 			<TextView
-				android:id="@+id/HeadhuntText"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginBottom="8dp"
 				android:gravity="center"
-				android:text="@string/headhunt"
+				android:text="@string/defender"
 				android:textSize="16sp" />
 		</LinearLayout>
 	</LinearLayout>
 
+	<!-- fourth row (Supporter, Specialist) -->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="6dp"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<ImageButton
+				android:id="@+id/Supporter"
+				android:layout_width="80dp"
+				android:layout_height="80dp"
+				android:layout_marginStart="6dp"
+				android:layout_marginTop="6dp"
+				android:layout_marginEnd="6dp"
+				android:background="@drawable/border"
+				android:clickable="true"
+				android:clipToOutline="true"
+				android:contentDescription="@string/supporter"
+				android:focusable="true"
+				android:gravity="center"
+				android:scaleType="fitCenter"
+				android:src="@mipmap/supporter" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp"
+				android:gravity="center"
+				android:text="@string/supporter"
+				android:textSize="16sp" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="10dp"
+			android:layout_height="match_parent"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<ImageButton
+				android:id="@+id/Specialist"
+				android:layout_width="80dp"
+				android:layout_height="80dp"
+				android:layout_marginStart="6dp"
+				android:layout_marginTop="6dp"
+				android:layout_marginEnd="6dp"
+				android:background="@drawable/border"
+				android:clickable="true"
+				android:clipToOutline="true"
+				android:contentDescription="@string/specialist"
+				android:focusable="true"
+				android:gravity="center"
+				android:scaleType="fitCenter"
+				android:src="@mipmap/specialist" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp"
+				android:gravity="center"
+				android:text="@string/specialist"
+				android:textSize="16sp" />
+		</LinearLayout>
+	</LinearLayout>
 
 </LinearLayout>

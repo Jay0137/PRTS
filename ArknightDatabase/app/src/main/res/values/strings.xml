@@ -7,7 +7,7 @@
 	<string name="materials">Materials</string>
 	<string name="sanity">Sanity</string>
 	<string name="outfits">Outfits</string>
-	<string name="factions">factions</string>
+	<string name="factions">Factions</string>
 	<string name="recruit">Recruit</string>
 	<string name="headhunt">Headhunt</string>
 	<string name="characters">Characters</string>
@@ -24,4 +24,14 @@
 	<string name="sanity_analyzer">Sanity Analyzer</string>
 	<string name="result">Result</string>
 	<string name="log_in">Please log in</string>
+	<string name="back">Back</string>
+	<string name="characters_info">characters info</string>
+	<string name="vanguard">Vanguard</string>
+	<string name="guard">Guard</string>
+	<string name="sniper">Sniper</string>
+	<string name="supporter">Supporter</string>
+	<string name="medic">Medic</string>
+	<string name="caster">Caster</string>
+	<string name="defender">Defender</string>
+	<string name="specialist">Specialist</string>
 </resources>

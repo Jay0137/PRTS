@@ -1,10 +1,8 @@
 package com.example.arknightdatabase;
 
 import android.content.Intent;
-import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,7 +24,7 @@ public class MainMenu extends AppCompatActivity {
         }
 
         ImageButton sanity = findViewById(R.id.Sanity);
-        ImageButton character = findViewById(R.id.Characters);
+        ImageButton operators = findViewById(R.id.Operators);
         ImageButton materials = findViewById(R.id.Materials);
         ImageButton outfits = findViewById(R.id.Outfits);
         ImageButton factions = findViewById(R.id.Factions);
@@ -37,15 +35,15 @@ public class MainMenu extends AppCompatActivity {
         sanity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainMenu.this, SanityActivity.class);
+                Intent intent = new Intent(MainMenu.this, Sanity.class);
                 startActivity(intent);
             }
         });
 
-        character.setOnClickListener(new View.OnClickListener() {
+        operators.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainMenu.this, CharactersActivity.class);
+                Intent intent = new Intent(MainMenu.this, OperatorClasses.class);
                 startActivity(intent);
             }
         });
@@ -53,7 +51,7 @@ public class MainMenu extends AppCompatActivity {
         materials.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainMenu.this, MaterialsActivity.class);
+                Intent intent = new Intent(MainMenu.this, Materials.class);
                 startActivity(intent);
             }
         });
@@ -61,7 +59,7 @@ public class MainMenu extends AppCompatActivity {
         outfits.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainMenu.this, OutfitsActivity.class);
+                Intent intent = new Intent(MainMenu.this, Outfits.class);
                 startActivity(intent);
             }
         });
@@ -69,7 +67,7 @@ public class MainMenu extends AppCompatActivity {
         factions.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainMenu.this, FactionsActivity.class);
+                Intent intent = new Intent(MainMenu.this, Factions.class);
                 startActivity(intent);
             }
         });
@@ -77,7 +75,7 @@ public class MainMenu extends AppCompatActivity {
         enemies.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainMenu.this, EnemiesActivity.class);
+                Intent intent = new Intent(MainMenu.this, Enemies.class);
                 startActivity(intent);
             }
         });
@@ -85,7 +83,7 @@ public class MainMenu extends AppCompatActivity {
         recruit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainMenu.this, RecruitActivity.class);
+                Intent intent = new Intent(MainMenu.this, Recruit.class);
                 startActivity(intent);
             }
         });
@@ -93,7 +91,7 @@ public class MainMenu extends AppCompatActivity {
         headhunt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainMenu.this, HeadhuntActivity.class);
+                Intent intent = new Intent(MainMenu.this, Headhunt.class);
                 startActivity(intent);
             }
         });
