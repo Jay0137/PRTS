@@ -1,6 +1,5 @@
 package com.example.arknightdatabase;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -9,9 +8,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainMenu extends AppCompatActivity {
 
+    private MainMenuClickHandler clickHandler;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);
+
+        // Initialize the click handler with the current context
+        clickHandler = new MainMenuClickHandler(this);
 
         // Hide the status bar
         getWindow().getDecorView().setSystemUiVisibility(
@@ -35,64 +39,56 @@ public class MainMenu extends AppCompatActivity {
         sanity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainMenu.this, Sanity.class);
-                startActivity(intent);
+                clickHandler.onSanityClick();
             }
         });
 
         operators.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainMenu.this, OperatorClasses.class);
-                startActivity(intent);
+                clickHandler.onOperatorsClick();
             }
         });
 
         materials.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainMenu.this, Materials.class);
-                startActivity(intent);
+               clickHandler.onMaterialsClick();
             }
         });
 
         outfits.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainMenu.this, Outfits.class);
-                startActivity(intent);
+              clickHandler.onOutfitsClick();
             }
         });
 
         factions.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainMenu.this, Factions.class);
-                startActivity(intent);
+                clickHandler.onFactionsClick();
             }
         });
 
         enemies.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainMenu.this, Enemies.class);
-                startActivity(intent);
+                clickHandler.onEnemiesClick();
             }
         });
 
         recruit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainMenu.this, Recruit.class);
-                startActivity(intent);
+                clickHandler.onRecruitClick();
             }
         });
 
         headhunt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainMenu.this, Headhunt.class);
-                startActivity(intent);
+                clickHandler.onHeadhuntClick();
             }
         });
     }

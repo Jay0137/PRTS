@@ -1,16 +1,20 @@
-package com.example.arknightdatabase;
+package com.example.arknightdatabase.characters;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Materials extends AppCompatActivity {
+import com.example.arknightdatabase.R;
+
+public class ProfileCharacter extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.materials);
+        setContentView(R.layout.character_info);
 
         // Hide the status bar
         getWindow().getDecorView().setSystemUiVisibility(
@@ -33,6 +37,16 @@ public class Materials extends AppCompatActivity {
 
         });
 
-    }
+        // Retrieve the intent that started this activity
+        Intent intent = getIntent();
+        if (intent != null) {
+            // Get the string passed with the key "name"
+            String name = intent.getStringExtra("name");
+            // Use the name variable as needed
+            // For example, you can set it to a TextView
+            TextView nameTextView = findViewById(R.id.charactersName);
+            nameTextView.setText(name);
+        }
 
+    }
 }

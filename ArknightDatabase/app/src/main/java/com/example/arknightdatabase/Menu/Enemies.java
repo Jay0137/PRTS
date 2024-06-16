@@ -1,4 +1,4 @@
-package com.example.arknightdatabase;
+package com.example.arknightdatabase.Menu;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,11 +6,13 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Outfits extends AppCompatActivity {
+import com.example.arknightdatabase.R;
+
+public class Enemies extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.outfits);
+        setContentView(R.layout.enemies);
 
         // Hide the status bar
         getWindow().getDecorView().setSystemUiVisibility(

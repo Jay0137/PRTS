@@ -1,6 +1,5 @@
 package com.example.arknightdatabase.classes;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -8,15 +7,19 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.arknightdatabase.characters.CharacterClickListener;
-import com.example.arknightdatabase.characters.Characters;
+import com.example.arknightdatabase.characters.CharacterClickHandler;
 import com.example.arknightdatabase.R;
 
-public class Vanguard extends AppCompatActivity implements CharacterClickListener {
+public class Vanguard extends AppCompatActivity {
+
+    private CharacterClickHandler clickHandler;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vanguard_list);
+
+        // Initialize the click handler with the current context
+        clickHandler = new CharacterClickHandler(this);
 
         // Hide the status bar
         getWindow().getDecorView().setSystemUiVisibility(
@@ -46,85 +49,43 @@ public class Vanguard extends AppCompatActivity implements CharacterClickListene
         texas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onTexasClick();
+                clickHandler.onTexasClick();
             }
         });
 
         poncirus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onPoncirusClick();
+                clickHandler.onPoncirusClick();
             }
         });
 
         muelsyse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onMuelsyseClick();
+                clickHandler.onMuelsyseClick();
             }
         });
 
         ines.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onInesClick();
+                clickHandler.onInesClick();
             }
         });
 
         puzzle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onPuzzleClick();
+                clickHandler.onPuzzleClick();
             }
         });
 
         vigil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onVigilClick();
+                clickHandler.onVigilClick();
             }
         });
-    }
-
-    @Override
-    public void onTexasClick() {
-        Intent intent = new Intent(Vanguard.this, Characters.class);
-        intent.putExtra("name", "Texas");
-        startActivity(intent);
-    }
-
-    @Override
-    public void onPoncirusClick() {
-        Intent intent = new Intent(Vanguard.this, Characters.class);
-        intent.putExtra("name", "Poncirus");
-        startActivity(intent);
-    }
-
-    @Override
-    public void onMuelsyseClick() {
-        Intent intent = new Intent(Vanguard.this, Character.class);
-        intent.putExtra("name", "Muelsyse");
-        startActivity(intent);
-    }
-
-    @Override
-    public void onInesClick() {
-        Intent intent = new Intent(Vanguard.this, Character.class);
-        intent.putExtra("name", "Ines");
-        startActivity(intent);
-    }
-
-    @Override
-    public void onPuzzleClick() {
-        Intent intent = new Intent(Vanguard.this, Character.class);
-        intent.putExtra("name", "Puzzle");
-        startActivity(intent);
-    }
-
-    @Override
-    public void onVigilClick() {
-        Intent intent = new Intent(Vanguard.this, Character.class);
-        intent.putExtra("name", "Vigil");
-        startActivity(intent);
     }
 }

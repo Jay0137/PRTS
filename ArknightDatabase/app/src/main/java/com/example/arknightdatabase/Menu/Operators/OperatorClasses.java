@@ -1,4 +1,4 @@
-package com.example.arknightdatabase;
+package com.example.arknightdatabase.Menu.Operators;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.arknightdatabase.MainMenuClickHandler;
+import com.example.arknightdatabase.R;
 import com.example.arknightdatabase.classes.Guard;
 import com.example.arknightdatabase.classes.Vanguard;
 import com.example.arknightdatabase.classes.Sniper;
@@ -19,10 +21,14 @@ import com.example.arknightdatabase.classes.Specialist;
 
 public class OperatorClasses extends AppCompatActivity {
 
+    private OperatorClassesClickHandler clickHandler;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.classes);
+
+        clickHandler = new OperatorClassesClickHandler(this);
 
         // Hide the status bar
         getWindow().getDecorView().setSystemUiVisibility(
@@ -55,64 +61,56 @@ public class OperatorClasses extends AppCompatActivity {
         vanguard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(OperatorClasses.this, Vanguard.class);
-                startActivity(intent);
+                clickHandler.onVanguardClick();
             }
         });
 
         guard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(OperatorClasses.this, Guard.class);
-                startActivity(intent);
+                clickHandler.onGuardClick();
             }
         });
 
         sniper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(OperatorClasses.this, Sniper.class);
-                startActivity(intent);
+                clickHandler.onSniperClick();
             }
         });
 
         caster.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(OperatorClasses.this, Caster.class);
-                startActivity(intent);
+                clickHandler.onCasterClick();
             }
         });
 
         medic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(OperatorClasses.this, Medic.class);
-                startActivity(intent);
+                clickHandler.onMedicClick();
             }
         });
 
         defender.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(OperatorClasses.this, Defender.class);
-                startActivity(intent);
+                clickHandler.onDefenderClick();
             }
         });
 
         supporter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(OperatorClasses.this, Supporter.class);
-                startActivity(intent);
+                clickHandler.onSupporterClick();
             }
         });
 
         specialist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(OperatorClasses.this, Specialist.class);
-                startActivity(intent);
+                clickHandler.onSpecialistClick();
                 }
         });
     }
