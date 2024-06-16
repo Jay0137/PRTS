@@ -1,3 +1,44 @@
+package com.example.arknightdatabase.characters;
+
+import android.content.Context;
+import android.content.Intent;
+
+public class CharacterClickHandler implements CharacterClickListener {
+    private Context context;
+
+    public CharacterClickHandler(Context context) {
+        this.context = context;
+    }
+
+    @Override
+    public void onTexasClick() {
+        startCharacterActivity("Texas");
+    }
+
+    @Override
+    public void onPoncirusClick() {
+        startCharacterActivity("Poncirus");
+    }
+
+    @Override
+    public void onMuelsyseClick() {
+        startCharacterActivity("Muelsyse");
+    }
+
+    @Override
+    public void onInesClick() {
+        startCharacterActivity("Ines");
+    }
+
+    @Override
+    public void onPuzzleClick() {
+        startCharacterActivity("Puzzle");
+    }
+
+    @Override
+    public void onVigilClick() {
+        startCharacterActivity("Vigil");
+    }
 
     @Override
     public void onCantabileClick() {
