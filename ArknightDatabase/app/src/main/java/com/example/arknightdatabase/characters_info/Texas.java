@@ -1,4 +1,4 @@
-package com.example.arknightdatabase.characters;
+package com.example.arknightdatabase.characters_info;
 
 import android.os.Bundle;
 import android.widget.ImageView;

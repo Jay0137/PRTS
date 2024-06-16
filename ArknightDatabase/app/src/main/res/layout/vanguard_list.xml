@@ -29,38 +29,151 @@
 			android:clipToOutline="true" />
 	</LinearLayout>
 
-	<!--First row of characters (texas)-->
-	<!--max 5 character por row-->
+	<!--First row of characters (texas, poncirus, muelsyse)-->
+	<!--max 3 character por row-->
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:gravity="center"
 		android:orientation="horizontal">
 
-		<LinearLayout
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
+		<ImageButton
+			android:id="@+id/Texas"
+			android:layout_width="80dp"
+			android:layout_height="80dp"
+			android:layout_marginStart="6dp"
+			android:layout_marginTop="6dp"
+			android:layout_marginBottom="6dp"
+			android:layout_marginEnd="6dp"
+			android:background="@drawable/border_0"
+			android:clickable="true"
+			android:clipToOutline="true"
+			android:contentDescription="@string/character_preview"
+			android:focusable="true"
 			android:gravity="center"
-			android:orientation="vertical">
+			android:scaleType="fitCenter"
+			android:src="@mipmap/texas" />
 
-			<ImageButton
-				android:id="@+id/Texas"
-				android:layout_width="80dp"
-				android:layout_height="80dp"
-				android:layout_marginStart="6dp"
-				android:layout_marginTop="6dp"
-				android:layout_marginEnd="6dp"
-				android:clickable="true"
-				android:contentDescription="@string/sanity"
-				android:focusable="true"
-				android:gravity="center"
-				android:scaleType="fitCenter"
-				android:src="@mipmap/texas"
-				android:background="@drawable/border_0"
-				android:clipToOutline="true" />
+		<ImageButton
+			android:id="@+id/Poncirus"
+			android:layout_width="80dp"
+			android:layout_height="80dp"
+			android:layout_marginStart="6dp"
+			android:layout_marginTop="6dp"
+			android:layout_marginBottom="6dp"
+			android:layout_marginEnd="6dp"
+			android:background="@drawable/border_0"
+			android:clickable="true"
+			android:clipToOutline="true"
+			android:contentDescription="@string/character_preview"
+			android:focusable="true"
+			android:gravity="center"
+			android:scaleType="fitCenter"
+			android:src="@mipmap/poncirus" />
 
+		<ImageButton
+			android:id="@+id/Muelsyse"
+			android:layout_width="80dp"
+			android:layout_height="80dp"
+			android:layout_marginStart="6dp"
+			android:layout_marginTop="6dp"
+			android:layout_marginBottom="6dp"
+			android:layout_marginEnd="6dp"
+			android:background="@drawable/border_0"
+			android:clickable="true"
+			android:clipToOutline="true"
+			android:contentDescription="@string/character_preview"
+			android:focusable="true"
+			android:gravity="center"
+			android:scaleType="fitCenter"
+			android:src="@mipmap/muelsyse" />
 
+	</LinearLayout>
 
-		</LinearLayout>
+	<!--Second row of characters (ines, puzzle, vigil)-->
+	<!--max 3 character por row-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<ImageButton
+			android:id="@+id/Ines"
+			android:layout_width="80dp"
+			android:layout_height="80dp"
+			android:layout_marginStart="6dp"
+			android:layout_marginTop="6dp"
+			android:layout_marginBottom="6dp"
+			android:layout_marginEnd="6dp"
+			android:background="@drawable/border_0"
+			android:clickable="true"
+			android:clipToOutline="true"
+			android:contentDescription="@string/character_preview"
+			android:focusable="true"
+			android:gravity="center"
+			android:scaleType="fitCenter"
+			android:src="@mipmap/ines" />
+
+		<ImageButton
+			android:id="@+id/Puzzle"
+			android:layout_width="80dp"
+			android:layout_height="80dp"
+			android:layout_marginStart="6dp"
+			android:layout_marginTop="6dp"
+			android:layout_marginBottom="6dp"
+			android:layout_marginEnd="6dp"
+			android:background="@drawable/border_0"
+			android:clickable="true"
+			android:clipToOutline="true"
+			android:contentDescription="@string/character_preview"
+			android:focusable="true"
+			android:gravity="center"
+			android:scaleType="fitCenter"
+			android:src="@mipmap/puzzle" />
+
+		<ImageButton
+			android:id="@+id/Vigil"
+			android:layout_width="80dp"
+			android:layout_height="80dp"
+			android:layout_marginStart="6dp"
+			android:layout_marginTop="6dp"
+			android:layout_marginBottom="6dp"
+			android:layout_marginEnd="6dp"
+			android:background="@drawable/border_0"
+			android:clickable="true"
+			android:clipToOutline="true"
+			android:contentDescription="@string/character_preview"
+			android:focusable="true"
+			android:gravity="center"
+			android:scaleType="fitCenter"
+			android:src="@mipmap/vigil" />
+	</LinearLayout>
+
+	<!--Second row of characters ()-->
+	<!--max 3 character por row-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<ImageButton
+			android:id="@+id/Cantable"
+			android:layout_width="80dp"
+			android:layout_height="80dp"
+			android:layout_marginStart="6dp"
+			android:layout_marginTop="6dp"
+			android:layout_marginBottom="6dp"
+			android:layout_marginEnd="6dp"
+			android:background="@drawable/border_0"
+			android:clickable="true"
+			android:clipToOutline="true"
+			android:contentDescription="@string/character_preview"
+			android:focusable="true"
+			android:gravity="center"
+			android:scaleType="fitCenter"
+			android:src="@mipmap/sanity" />
+
 	</LinearLayout>
 </LinearLayout>

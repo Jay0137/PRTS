@@ -31,6 +31,11 @@
 		<activity android:name=".classes.Defender"/>
 		<activity android:name=".classes.Supporter"/>
 		<activity android:name=".classes.Specialist"/>
+
+		<activity android:name=".characters.Characters"/>
+		<activity android:name=".Character"/>
+
+
 		<activity android:name=".Materials" />
 		<activity android:name=".Outfits" />
 		<!--outfits will be placed by years-->

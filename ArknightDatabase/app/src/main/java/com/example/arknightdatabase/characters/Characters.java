@@ -1,4 +1,4 @@
-package com.example.arknightdatabase;
+package com.example.arknightdatabase.characters;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.arknightdatabase.R;
 
 public class Characters extends AppCompatActivity {
     @Override

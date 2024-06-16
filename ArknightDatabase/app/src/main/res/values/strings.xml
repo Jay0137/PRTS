@@ -34,4 +34,5 @@
 	<string name="caster">Caster</string>
 	<string name="defender">Defender</string>
 	<string name="specialist">Specialist</string>
+	<string name="character_preview">Character preview</string>
 </resources>
