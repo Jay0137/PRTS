@@ -1,4 +1,4 @@
-package com.example.arknightdatabase.characters;
+package com.example.arknightdatabase.charactersInfo;
 
 import android.content.Context;
 import android.content.Intent;
@@ -154,6 +154,11 @@ public class CharacterClickHandler implements CharacterClickListener {
     public void onYato() {
         startCharacterActivity("Yato");
     }
+
+    //@Override
+    /*public void onCantabile() {
+        startCharacterActivity("Cantable");
+    }*/
 
     private void startCharacterActivity(String name) {
         Intent intent = new Intent(context, ProfileCharacter.class);

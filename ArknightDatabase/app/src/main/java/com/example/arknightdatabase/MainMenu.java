@@ -6,7 +6,7 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainMenu extends AppCompatActivity {
+public class MainMenu extends BaseActivity {
 
     private MainMenuClickHandler clickHandler;
 
@@ -16,16 +16,6 @@ public class MainMenu extends AppCompatActivity {
 
         // Initialize the click handler with the current context
         clickHandler = new MainMenuClickHandler(this);
-
-        // Hide the status bar
-        getWindow().getDecorView().setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_FULLSCREEN |
-                        View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
-
-        // Optional: If you want to hide the ActionBar as well
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().hide();
-        }
 
         ImageButton sanity = findViewById(R.id.Sanity);
         ImageButton operators = findViewById(R.id.Operators);

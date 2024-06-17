@@ -1,4 +1,4 @@
-package com.example.arknightdatabase.Menu.Operators;
+package com.example.arknightdatabase.menu.Operators;
 
 import android.content.Context;
 import android.content.Intent;

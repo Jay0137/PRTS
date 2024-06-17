@@ -1,6 +1,4 @@
-package com.example.arknightdatabase.Menu.Operators;
-
-import com.example.arknightdatabase.classes.Sniper;
+package com.example.arknightdatabase.menu.Operators;
 
 public interface OperatorClassesClickListener {
 

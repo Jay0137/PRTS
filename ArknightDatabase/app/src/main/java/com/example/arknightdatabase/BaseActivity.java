@@ -1,18 +1,14 @@
-package com.example.arknightdatabase.Menu;
+package com.example.arknightdatabase;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.arknightdatabase.R;
+public class BaseActivity extends AppCompatActivity {
 
-public class Materials extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.materials);
 
         // Hide the status bar
         getWindow().getDecorView().setSystemUiVisibility(
@@ -21,20 +17,7 @@ public class Materials extends AppCompatActivity {
 
         // Optional: If you want to hide the ActionBar as well
         if (getSupportActionBar() != null) {
-            getSupportActionBar().hide();
+           getSupportActionBar().hide();
         }
-
-        ImageView back = findViewById(R.id.backButton);
-
-
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-
-        });
-
     }
-
 }

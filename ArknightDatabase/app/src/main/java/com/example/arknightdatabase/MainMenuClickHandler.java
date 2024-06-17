@@ -5,14 +5,14 @@ import android.content.Intent;
 
 import androidx.core.content.ContextCompat;
 
-import com.example.arknightdatabase.Menu.Enemies;
-import com.example.arknightdatabase.Menu.Factions;
-import com.example.arknightdatabase.Menu.Headhunt;
-import com.example.arknightdatabase.Menu.Materials;
-import com.example.arknightdatabase.Menu.Operators.OperatorClasses;
-import com.example.arknightdatabase.Menu.Outfits;
-import com.example.arknightdatabase.Menu.Recruit;
-import com.example.arknightdatabase.Menu.Sanity;
+import com.example.arknightdatabase.menu.Enemies;
+import com.example.arknightdatabase.menu.Factions;
+import com.example.arknightdatabase.menu.Headhunt;
+import com.example.arknightdatabase.menu.Materials;
+import com.example.arknightdatabase.menu.Operators.OperatorClasses;
+import com.example.arknightdatabase.menu.Outfits;
+import com.example.arknightdatabase.menu.Recruit;
+import com.example.arknightdatabase.menu.Sanity;
 
 public class MainMenuClickHandler implements MainMenuClickListener {
 

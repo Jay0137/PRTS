@@ -1,4 +1,4 @@
-package com.example.arknightdatabase.Menu;
+package com.example.arknightdatabase.menu;
 
 import android.os.Bundle;
 import android.text.InputFilter;
@@ -8,11 +8,10 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.example.arknightdatabase.BaseActivity;
 import com.example.arknightdatabase.R;
 
-public class Sanity extends AppCompatActivity {
+public class Sanity extends BaseActivity {
     private int currentSanity;
     private int totalSanity;
     private final int Countdown = 360; // standard time to recover 1 sanity
@@ -22,15 +21,7 @@ public class Sanity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sanity_layout);
 
-        // Hide the status bar
-        getWindow().getDecorView().setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_FULLSCREEN |
-                        View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
 
-        // Optional: If you want to hide the ActionBar as well
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().hide();
-        }
 
         EditText totalSanityText = findViewById(R.id.totalSanityText);
         EditText currentSanityText = findViewById(R.id.currentSanityText);

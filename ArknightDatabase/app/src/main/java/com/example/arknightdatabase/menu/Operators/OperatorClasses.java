@@ -1,25 +1,14 @@
-package com.example.arknightdatabase.Menu.Operators;
+package com.example.arknightdatabase.menu.Operators;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.arknightdatabase.MainMenuClickHandler;
+import com.example.arknightdatabase.BaseActivity;
 import com.example.arknightdatabase.R;
-import com.example.arknightdatabase.classes.Guard;
-import com.example.arknightdatabase.classes.Vanguard;
-import com.example.arknightdatabase.classes.Sniper;
-import com.example.arknightdatabase.classes.Caster;
-import com.example.arknightdatabase.classes.Medic;
-import com.example.arknightdatabase.classes.Defender;
-import com.example.arknightdatabase.classes.Supporter;
-import com.example.arknightdatabase.classes.Specialist;
 
-public class OperatorClasses extends AppCompatActivity {
+public class OperatorClasses extends BaseActivity {
 
     private OperatorClassesClickHandler clickHandler;
 
@@ -30,15 +19,6 @@ public class OperatorClasses extends AppCompatActivity {
 
         clickHandler = new OperatorClassesClickHandler(this);
 
-        // Hide the status bar
-        getWindow().getDecorView().setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_FULLSCREEN |
-                        View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
-
-        // Optional: If you want to hide the ActionBar as well
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().hide();
-        }
 
         ImageView back = findViewById(R.id.backButton);
         ImageButton vanguard = findViewById(R.id.Vanguard);

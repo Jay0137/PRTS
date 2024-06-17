@@ -21,8 +21,8 @@
 		</activity>
 
 		<activity android:name=".MainMenu" />
-		<activity android:name=".Menu.Sanity" />
-		<activity android:name=".Menu.Operators.OperatorClasses" />
+		<activity android:name=".menu.Sanity" />
+		<activity android:name=".menu.Operators.OperatorClasses" />
 		<!--classes-->
 		<activity android:name=".classes.Vanguard" />
 		<activity android:name=".classes.Guard" />
@@ -33,19 +33,19 @@
 		<activity android:name=".classes.Supporter"/>
 		<activity android:name=".classes.Specialist"/>
 		<!--Characters information-->
-		<activity android:name=".characters.ProfileCharacter"/>
+		<activity android:name=".charactersInfo.ProfileCharacter"/>
 
-		<activity android:name=".Menu.Materials" />
-		<activity android:name=".Menu.Outfits" />
+		<activity android:name=".menu.Materials" />
+		<activity android:name=".menu.Outfits" />
 		<!--outfits will be placed by years-->
-		<activity android:name=".Menu.Factions" />
+		<activity android:name=".menu.Factions" />
 		<!--factions will show the companies logo-->
 		<!--each company will show the characters in the company and the one they are related to-->
-		<activity android:name=".Menu.Enemies" />
+		<activity android:name=".menu.Enemies" />
 		<!-- list of all the enemies-->
-		<activity android:name=".Menu.Recruit" />
+		<activity android:name=".menu.Recruit" />
 		<!--list of all the character that can be recruited-->
-		<activity android:name=".Menu.Headhunt" />
+		<activity android:name=".menu.Headhunt" />
 		<!-- update the banner of the characters and period of duration of the banner-->
 		<!-- and the banner of next month after the announcement is made-->
 

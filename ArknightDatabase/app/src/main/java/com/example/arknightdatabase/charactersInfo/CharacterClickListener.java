@@ -1,4 +1,4 @@
-package com.example.arknightdatabase.characters;
+package com.example.arknightdatabase.charactersInfo;
 
 public interface CharacterClickListener {
     void onTexasClick();
