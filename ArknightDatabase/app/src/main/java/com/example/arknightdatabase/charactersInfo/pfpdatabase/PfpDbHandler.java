@@ -8,148 +8,146 @@ public class PfpDbHandler implements PfpDbListener{
 
     @Override
     public int getTexasPfp() {
-
-        img =R.mipmap.bt;
         return img;
     }
 
     @Override
     public int getPoncirusPfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getMuelsysePfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getInesPfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getPuzzlePfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getVigilPfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getCantabilePfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getBlacknightPfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getWildManePfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getFlametailPfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getSaileachPfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getSagaPfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getBeanstalkPfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getReserveOperatorMalePfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getChiavePfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getElysiumPfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getBagpipePfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getReedPfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getMyrtlePfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getGraniPfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getSiegePfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getZimaPfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getVignaPfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getScaveengerPfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getCourierPfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getPlumePfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getVanillaPfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getFangPfp() {
-        return 0;
+        return img;
     }
 
     @Override
     public int getYatoPfp() {
-        return 0;
+        return img;
     }
 }

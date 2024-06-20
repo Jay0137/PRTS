@@ -9,6 +9,8 @@ import android.widget.TextView;
 import com.example.arknightdatabase.BaseActivity;
 import com.example.arknightdatabase.R;
 import com.example.arknightdatabase.charactersInfo.infoDatabase.BasicInfoDbHandler;
+import com.example.arknightdatabase.charactersInfo.medicalreportdb.MedicalReportDbHandler;
+import com.example.arknightdatabase.charactersInfo.medicalreportdb.MedicalReportDbListener;
 import com.example.arknightdatabase.charactersInfo.pfpdatabase.PfpDbHandler;
 
 public class ProfileCharacter extends BaseActivity {
@@ -16,6 +18,7 @@ public class ProfileCharacter extends BaseActivity {
     String name;
     String basicInfo;
     int imageResourceId;
+    String medicalReport;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +27,11 @@ public class ProfileCharacter extends BaseActivity {
 
         BasicInfoDbHandler profile = new BasicInfoDbHandler();
         PfpDbHandler pfp = new PfpDbHandler();
+        MedicalReportDbHandler mr = new MedicalReportDbHandler();
 
         ImageView back = findViewById(R.id.backButton);
         TextView nameTextView = findViewById(R.id.charactersName);
-        TextView descriptionTextView = findViewById(R.id.charactersInfo);
+        TextView basicinfoTextView = findViewById(R.id.charactersInfo);
         ImageView characterImage = findViewById(R.id.characterImage);
 
 
@@ -48,6 +52,7 @@ public class ProfileCharacter extends BaseActivity {
                 case "Texas":
                     basicInfo = profile.getTexasBasicInfo();
                     imageResourceId = pfp.getTexasPfp();
+                    medicalReport = mr.getTexasMedicalReport();
 
                     break;
                 case "Poncirus":
@@ -67,14 +72,14 @@ public class ProfileCharacter extends BaseActivity {
 
                     break;
             }
-            descriptionTextView.setText(basicInfo);
+            basicinfoTextView.setText(basicInfo);
             characterImage.setImageResource(imageResourceId);
         } else {
             // Handle the case where intent is null
             name = "Unknown";
             nameTextView.setText(name);
             basicInfo = "Unknown";
-            descriptionTextView.setText(basicInfo);
+            basicinfoTextView.setText(basicInfo);
             imageResourceId = 404;
             characterImage.setImageResource(imageResourceId);
         }
