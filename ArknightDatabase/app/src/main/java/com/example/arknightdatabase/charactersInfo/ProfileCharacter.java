@@ -8,15 +8,13 @@ import android.widget.TextView;
 
 import com.example.arknightdatabase.BaseActivity;
 import com.example.arknightdatabase.R;
-import com.example.arknightdatabase.charactersInfo.infoDatabase.BasicInfoDbHandler;
-import com.example.arknightdatabase.charactersInfo.medicalreportdb.MedicalReportDbHandler;
-import com.example.arknightdatabase.charactersInfo.medicalreportdb.MedicalReportDbListener;
+import com.example.arknightdatabase.charactersInfo.basicinfodatabase.genders.GenderDbHandler;
 import com.example.arknightdatabase.charactersInfo.pfpdatabase.PfpDbHandler;
 
 public class ProfileCharacter extends BaseActivity {
 
     String name;
-    String basicInfo;
+    String Gender;
     int imageResourceId;
     String medicalReport;
 
@@ -25,13 +23,13 @@ public class ProfileCharacter extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.character_info);
 
-        BasicInfoDbHandler profile = new BasicInfoDbHandler();
+        GenderDbHandler profile = new GenderDbHandler();
         PfpDbHandler pfp = new PfpDbHandler();
-        MedicalReportDbHandler mr = new MedicalReportDbHandler();
+
 
         ImageView back = findViewById(R.id.backButton);
         TextView nameTextView = findViewById(R.id.charactersName);
-        TextView basicinfoTextView = findViewById(R.id.charactersInfo);
+        TextView genderTextView = findViewById(R.id.Gender);
         ImageView characterImage = findViewById(R.id.characterImage);
 
 
@@ -50,36 +48,36 @@ public class ProfileCharacter extends BaseActivity {
             // Comparing the name with a specific string using switch
             switch (name) {
                 case "Texas":
-                    basicInfo = profile.getTexasBasicInfo();
+                    Gender = profile.getTexasGender();
                     imageResourceId = pfp.getTexasPfp();
                     medicalReport = mr.getTexasMedicalReport();
 
                     break;
                 case "Poncirus":
-                    basicInfo = profile.getPoncirusBasicInfo();
+                    Gender = profile.getPoncirusGender();
                     imageResourceId = pfp.getPoncirusPfp();
 
                     break;
                 case "Muelsyse":
-                    basicInfo = profile.getMuelsyseBasicInfo();
+                    Gender = profile.getMuelsyseGender();
                     imageResourceId = pfp.getMuelsysePfp();
 
                     break;
                 default:
                     // Handle cases where name does not match any of the known values
-                    basicInfo = "Unknown";
+                    Gender = "Unknown";
                     imageResourceId = 404;
 
                     break;
             }
-            basicinfoTextView.setText(basicInfo);
+            nameTextView.setText(Gender);
             characterImage.setImageResource(imageResourceId);
         } else {
             // Handle the case where intent is null
             name = "Unknown";
             nameTextView.setText(name);
-            basicInfo = "Unknown";
-            basicinfoTextView.setText(basicInfo);
+            Gender = "Unknown";
+            GenderTextView.setText(Gender);
             imageResourceId = 404;
             characterImage.setImageResource(imageResourceId);
         }
