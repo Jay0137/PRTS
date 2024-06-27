@@ -1,0 +1,32 @@
+package com.example.arknightdatabase.charactersInfo.physicalexam.strength;
+
+public interface StrengthListener {    String onTexasStrength();
+    String onPoncirusStrength();
+    String onMuelsyseStrength();
+    String onInesStrength();
+    String onPuzzleStrength();
+    String onVigilStrength();
+    String onCantabileStrength();
+    String onBlacknightStrength();
+    String onwildManeStrength();
+    String onFlametailStrength();
+    String onSaileachStrength();
+    String onSagaStrength();
+    String onBeanstalkStrength();
+    String onReserveOperatorMaleStrength();
+    String onChiaveStrength();
+    String onElysiumStrength();
+    String onBagpipeStrength();
+    String onReedStrength();
+    String onMyrtleStrength();
+    String onGraniStrength();
+    String onSiegeStrength();
+    String onZimaStrength();
+    String onVignaStrength();
+    String onScaveengerStrength();
+    String onCourierStrength();
+    String onPlumeStrength();
+    String onVanillaStrength();
+    String onFangStrength();
+    String onYatoStrength();
+}

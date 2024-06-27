@@ -8,14 +8,7 @@ public class GenderDbHandler implements GenderDbListener {
     @Override
     public String getTexasGender() {
 
-        Gender = "Gender\tFemale\n" +
-                "Place of Birth\tColumbia\n" +
-                "Birthday\tJun. 1\n" +
-                "Race\tLupo\n" +
-                "Height\t161cm\n" +
-                "Combat Experience\t\n" +
-                "3 years\n" +
-                "Infection Status\tNon-infected as confirmed by medical report.";
+        Gender = "Female";
         return Gender;
     }
 

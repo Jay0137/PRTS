@@ -21,9 +21,9 @@
 			</intent-filter>
 		</activity>
 
-		<activity android:name=".MainMenu" />
-		<activity android:name=".menu.Sanity" />
-		<activity android:name=".menu.Operators.OperatorClasses" />
+		<activity android:name=".app.MainMenu" />
+		<activity android:name=".Sanity" />
+		<activity android:name=".Operators.OperatorClasses" />
 		<!--classes-->
 		<activity android:name=".classes.Vanguard" />
 		<activity android:name=".classes.Guard" />
@@ -36,17 +36,17 @@
 		<!--Characters information-->
 		<activity android:name=".charactersInfo.ProfileCharacter"/>
 
-		<activity android:name=".menu.Materials" />
-		<activity android:name=".menu.Outfits" />
+		<activity android:name=".Materials" />
+		<activity android:name=".Outfits" />
 		<!--outfits will be placed by years-->
-		<activity android:name=".menu.Factions" />
+		<activity android:name=".Factions" />
 		<!--factions will show the companies logo-->
 		<!--each company will show the characters in the company and the one they are related to-->
-		<activity android:name=".menu.Enemies" />
+		<activity android:name=".Enemies" />
 		<!-- list of all the enemies-->
-		<activity android:name=".menu.Recruit" />
+		<activity android:name=".Recruit" />
 		<!--list of all the character that can be recruited-->
-		<activity android:name=".menu.Headhunt" />
+		<activity android:name=".Headhunt" />
 		<!-- update the banner of the characters and period of duration of the banner-->
 		<!-- and the banner of next month after the announcement is made-->
 

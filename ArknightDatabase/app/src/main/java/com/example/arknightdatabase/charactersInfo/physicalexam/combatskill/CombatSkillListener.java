@@ -1,0 +1,32 @@
+package com.example.arknightdatabase.charactersInfo.physicalexam.combatskill;
+
+public interface CombatSkillListener {    String onTexasSkill();
+    String onPoncirusSkill();
+    String onMuelsyseSkill();
+    String onInesSkill();
+    String onPuzzleSkill();
+    String onVigilSkill();
+    String onCantabileSkill();
+    String onBlacknightSkill();
+    String onwildManeSkill();
+    String onFlametailSkill();
+    String onSaileachSkill();
+    String onSagaSkill();
+    String onBeanstalkSkill();
+    String onReserveOperatorMaleSkill();
+    String onChiaveSkill();
+    String onElysiumSkill();
+    String onBagpipeSkill();
+    String onReedSkill();
+    String onMyrtleSkill();
+    String onGraniSkill();
+    String onSiegeSkill();
+    String onZimaSkill();
+    String onVignaSkill();
+    String onScaveengerSkill();
+    String onCourierSkill();
+    String onPlumeSkill();
+    String onVanillaSkill();
+    String onFangSkill();
+    String onYatoSkill();
+}

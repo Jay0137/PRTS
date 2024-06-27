@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:layout_marginTop="16dp"
+	android:layout_marginBottom="16dp"
+	android:layout_marginStart="16dp"
+	android:layout_marginEnd="16dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/backButton"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_marginStart="6dp"
+			android:layout_marginTop="6dp"
+			android:layout_marginEnd="6dp"
+			android:layout_marginBottom="6dp"
+			android:background="@drawable/border"
+			android:clipToOutline="true"
+			android:contentDescription="@string/back"
+			android:gravity="center"
+			android:scaleType="fitCenter"
+			android:src="@mipmap/back_button" />
+	</LinearLayout>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="6dp"
+			android:layout_marginTop="6dp"
+			android:layout_marginEnd="6dp"
+			android:layout_marginBottom="6dp"
+			android:gravity="center_horizontal"
+			android:orientation="vertical">
+
+			<!--Image-->
+			<FrameLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center">
+
+				<ImageView
+					android:id="@+id/characterImage"
+					android:layout_width="170dp"
+					android:layout_height="250dp"
+					android:layout_marginStart="6dp"
+					android:layout_marginTop="6dp"
+					android:layout_marginEnd="6dp"
+					android:layout_marginBottom="6dp"
+					android:contentDescription="@string/characters"
+					android:scaleType="centerCrop"/>
+			</FrameLayout>
+
+			<!--Name-->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="6dp"
+				android:orientation="horizontal">
+				<!--max width 300dp-->
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="start"
+					android:text="@string/Name"
+					android:textSize="20sp" />
+
+				<TextView
+					android:id="@+id/charactersName"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/Name"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--bar-->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="3dp"
+				android:layout_marginTop="6dp"
+				android:layout_marginEnd="3dp"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/basic_information"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--gender-->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="6dp"
+				android:orientation="horizontal">
+				<!--max width 300dp-->
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="start"
+					android:text="@string/gender"
+					android:textSize="20sp" />
+
+				<TextView
+					android:id="@+id/Gender"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/gender"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--Place of Birth-->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				android:orientation="horizontal">
+				<!--max width 300dp-->
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="start"
+					android:text="@string/birthplace"
+					android:textSize="20sp" />
+
+				<TextView
+					android:id="@+id/BirthPlace"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/birthplace"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--birthday-->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				android:orientation="horizontal">
+				<!--max width 300dp-->
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="start"
+					android:text="@string/birthday"
+					android:textSize="20sp" />
+
+				<TextView
+					android:id="@+id/BirthDay"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/birthday"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--Race-->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				android:orientation="horizontal">
+				<!--max width 300dp-->
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="start"
+					android:text="@string/race"
+					android:textSize="20sp" />
+
+				<TextView
+					android:id="@+id/Race"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/race"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--Height-->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				android:orientation="horizontal">
+				<!--max width 300dp-->
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="start"
+					android:text="@string/height"
+					android:textSize="20sp" />
+
+				<TextView
+					android:id="@+id/Height"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/height"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--Combat Experience-->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				android:orientation="horizontal">
+				<!--max width 300dp-->
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="start"
+					android:text="@string/combat_experience"
+					android:textSize="20sp" />
+
+				<TextView
+					android:id="@+id/CombatExperience"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/combat_experience"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--Infection Status-->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				android:orientation="horizontal">
+				<!--max width 300dp-->
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="start"
+					android:text="@string/infection_status"
+					android:textSize="20sp" />
+
+				<TextView
+					android:id="@+id/InfectionStatus"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/infection_status"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--bar-->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="3dp"
+				android:layout_marginTop="6dp"
+				android:layout_marginEnd="3dp"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/physical_examination"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--Strength-->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="6dp"
+				android:orientation="horizontal">
+				<!--max width 300dp-->
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="start"
+					android:text="@string/strength"
+					android:textSize="20sp" />
+
+				<TextView
+					android:id="@+id/Strength"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/strength"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--Mobility-->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="6dp"
+				android:orientation="horizontal">
+				<!--max width 300dp-->
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="start"
+					android:text="@string/mobility"
+					android:textSize="20sp" />
+
+				<TextView
+					android:id="@+id/Mobility"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/mobility"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--Endurance-->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="6dp"
+				android:orientation="horizontal">
+				<!--max width 300dp-->
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="start"
+					android:text="@string/endurance"
+					android:textSize="20sp" />
+
+				<TextView
+					android:id="@+id/Endurance"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/endurance"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--Tactical acumen-->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="6dp"
+				android:orientation="horizontal">
+				<!--max width 300dp-->
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="start"
+					android:text="@string/tactical_acumen"
+					android:textSize="20sp" />
+
+				<TextView
+					android:id="@+id/TacticalAcumen"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/tactical_acumen"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--Combat skill-->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="6dp"
+				android:orientation="horizontal">
+				<!--max width 300dp-->
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="start"
+					android:text="@string/combat_skill"
+					android:textSize="20sp" />
+
+				<TextView
+					android:id="@+id/CombatSkill"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/combat_skill"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--Arts adaptability-->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="6dp"
+				android:orientation="horizontal">
+				<!--max width 300dp-->
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="start"
+					android:text="@string/arts_adaptability"
+					android:textSize="20sp" />
+
+				<TextView
+					android:id="@+id/ArtsAdaptability"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/arts_adaptability"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--bar-->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="3dp"
+				android:layout_marginTop="6dp"
+				android:layout_marginEnd="3dp"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="Broken"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--Nation-->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="6dp"
+				android:orientation="horizontal">
+				<!--max width 300dp-->
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="start"
+					android:text="@string/nation"
+					android:textSize="20sp" />
+
+				<TextView
+					android:id="@+id/Nation"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/nation"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+			<!--Group-->
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2dp"
+				android:orientation="horizontal">
+				<!--max width 300dp-->
+				<TextView
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="start"
+					android:text="@string/group"
+					android:textSize="20sp" />
+
+				<TextView
+					android:id="@+id/Group"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="@string/group"
+					android:textSize="20sp" />
+			</LinearLayout>
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

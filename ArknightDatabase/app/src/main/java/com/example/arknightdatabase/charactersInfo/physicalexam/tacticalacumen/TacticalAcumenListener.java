@@ -1,0 +1,32 @@
+package com.example.arknightdatabase.charactersInfo.physicalexam.tacticalacumen;
+
+public interface TacticalAcumenListener {    String onTexasAcumen();
+    String onPoncirusAcumen();
+    String onMuelsyseAcumen();
+    String onInesAcumen();
+    String onPuzzleAcumen();
+    String onVigilAcumen();
+    String onCantabileAcumen();
+    String onBlacknightAcumen();
+    String onwildManeAcumen();
+    String onFlametailAcumen();
+    String onSaileachAcumen();
+    String onSagaAcumen();
+    String onBeanstalkAcumen();
+    String onReserveOperatorMaleAcumen();
+    String onChiaveAcumen();
+    String onElysiumAcumen();
+    String onBagpipeAcumen();
+    String onReedAcumen();
+    String onMyrtleAcumen();
+    String onGraniAcumen();
+    String onSiegeAcumen();
+    String onZimaAcumen();
+    String onVignaAcumen();
+    String onScaveengerAcumen();
+    String onCourierAcumen();
+    String onPlumeAcumen();
+    String onVanillaAcumen();
+    String onFangAcumen();
+    String onYatoAcumen();
+}

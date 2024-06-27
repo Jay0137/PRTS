@@ -6,5 +6,5 @@
 
 	<include
 		android:id="@+id/charactersView"
-		layout="@layout/character_info" />
+		layout="@layout/character_data" />
 </LinearLayout>

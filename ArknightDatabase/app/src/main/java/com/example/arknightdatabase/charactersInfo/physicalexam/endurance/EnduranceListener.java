@@ -1,0 +1,32 @@
+package com.example.arknightdatabase.charactersInfo.physicalexam.endurance;
+
+public interface EnduranceListener {    String onTexasEndurance();
+    String onPoncirusEndurance();
+    String onMuelsyseEndurance();
+    String onInesEndurance();
+    String onPuzzleEndurance();
+    String onVigilEndurance();
+    String onCantabileEndurance();
+    String onBlacknightEndurance();
+    String onwildManeEndurance();
+    String onFlametailEndurance();
+    String onSaileachEndurance();
+    String onSagaEndurance();
+    String onBeanstalkEndurance();
+    String onReserveOperatorMaleEndurance();
+    String onChiaveEndurance();
+    String onElysiumEndurance();
+    String onBagpipeEndurance();
+    String onReedEndurance();
+    String onMyrtleEndurance();
+    String onGraniEndurance();
+    String onSiegeEndurance();
+    String onZimaEndurance();
+    String onVignaEndurance();
+    String onScaveengerEndurance();
+    String onCourierEndurance();
+    String onPlumeEndurance();
+    String onVanillaEndurance();
+    String onFangEndurance();
+    String onYatoEndurance();
+}

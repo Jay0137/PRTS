@@ -6,19 +6,19 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.example.arknightdatabase.BaseActivity;
-import com.example.arknightdatabase.charactersInfo.CharacterClickHandler;
 import com.example.arknightdatabase.R;
+import com.example.arknightdatabase.charactersInfo.CharacterHandler;
 
 public class Vanguard extends BaseActivity {
 
-    private CharacterClickHandler clickHandler;
+    private CharacterHandler clickHandler;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vanguard_list);
 
         // Initialize the click handler with the current context
-        clickHandler = new CharacterClickHandler(this);
+        clickHandler = new CharacterHandler(this);
 
         ImageView back = findViewById(R.id.backButton);
         ImageButton texas = findViewById(R.id.Texas);
@@ -38,42 +38,42 @@ public class Vanguard extends BaseActivity {
         texas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clickHandler.onTexasClick();
+                clickHandler.onTexas();
             }
         });
 
         poncirus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clickHandler.onPoncirusClick();
+                clickHandler.onPoncirus();
             }
         });
 
         muelsyse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clickHandler.onMuelsyseClick();
+                clickHandler.onMuelsyse();
             }
         });
 
         ines.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clickHandler.onInesClick();
+                clickHandler.onInes();
             }
         });
 
         puzzle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clickHandler.onPuzzleClick();
+                clickHandler.onPuzzle();
             }
         });
 
         vigil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clickHandler.onVigilClick();
+                clickHandler.onVigil();
             }
         });
     }

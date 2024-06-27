@@ -43,4 +43,13 @@
 	<string name="infection_status">Infection Status</string>
 	<string name="nation">Nation</string>
 	<string name="group">Group</string>
+	<string name="birthday">Birthday</string>
+	<string name="basic_information">Basic Information</string>
+	<string name="physical_examination">Physical Examination</string>
+	<string name="strength">Strength</string>
+	<string name="mobility">Mobility</string>
+	<string name="endurance">Endurance</string>
+	<string name="tactical_acumen">Tactical Acumen</string>
+	<string name="combat_skill">Combat skill</string>
+	<string name="arts_adaptability">Arts Adaptability</string>
 </resources>

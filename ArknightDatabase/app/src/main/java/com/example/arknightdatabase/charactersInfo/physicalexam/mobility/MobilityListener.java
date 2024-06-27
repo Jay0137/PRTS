@@ -1,0 +1,32 @@
+package com.example.arknightdatabase.charactersInfo.physicalexam.mobility;
+
+public interface MobilityListener {    String onTexasMobility();
+    String onPoncirusMobility();
+    String onMuelsyseMobility();
+    String onInesMobility();
+    String onPuzzleMobility();
+    String onVigilMobility();
+    String onCantabileMobility();
+    String onBlacknightMobility();
+    String onwildManeMobility();
+    String onFlametailMobility();
+    String onSaileachMobility();
+    String onSagaMobility();
+    String onBeanstalkMobility();
+    String onReserveOperatorMaleMobility();
+    String onChiaveMobility();
+    String onElysiumMobility();
+    String onBagpipeMobility();
+    String onReedMobility();
+    String onMyrtleMobility();
+    String onGraniMobility();
+    String onSiegeMobility();
+    String onZimaMobility();
+    String onVignaMobility();
+    String onScaveengerMobility();
+    String onCourierMobility();
+    String onPlumeMobility();
+    String onVanillaMobility();
+    String onFangMobility();
+    String onYatoMobility();
+}
