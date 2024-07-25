@@ -34,7 +34,7 @@
 				android:gravity="center"
 				android:scaleType="fitCenter"
 				android:src="@mipmap/sanity"
-				android:background="@drawable/border"
+				android:background="@drawable/border_grey"
 				android:clipToOutline="true" />
 
 			<TextView
@@ -70,7 +70,7 @@
 				android:gravity="center"
 				android:scaleType="fitCenter"
 				android:src="@mipmap/operators"
-				android:background="@drawable/border"
+				android:background="@drawable/border_grey"
 				android:clipToOutline="true" />
 
 			<TextView
@@ -110,7 +110,7 @@
 				android:gravity="center"
 				android:scaleType="fitCenter"
 				android:src="@mipmap/items"
-				android:background="@drawable/border"
+				android:background="@drawable/border_grey"
 				android:clipToOutline="true" />
 
 			<TextView
@@ -146,7 +146,7 @@
 				android:gravity="center"
 				android:scaleType="fitCenter"
 				android:src="@mipmap/outfit"
-				android:background="@drawable/border"
+				android:background="@drawable/border_grey"
 				android:clipToOutline="true" />
 
 			<TextView
@@ -186,7 +186,7 @@
 				android:gravity="center"
 				android:scaleType="fitCenter"
 				android:src="@mipmap/faction"
-				android:background="@drawable/border"
+				android:background="@drawable/border_grey"
 				android:clipToOutline="true" />
 
 			<TextView
@@ -222,7 +222,7 @@
 				android:gravity="center"
 				android:scaleType="fitCenter"
 				android:src="@mipmap/enemy"
-				android:background="@drawable/border"
+				android:background="@drawable/border_grey"
 				android:clipToOutline="true" />
 
 			<TextView
@@ -262,7 +262,7 @@
 				android:gravity="center"
 				android:scaleType="fitCenter"
 				android:src="@mipmap/recruit"
-				android:background="@drawable/border"
+				android:background="@drawable/border_grey"
 				android:clipToOutline="true" />
 
 			<TextView
@@ -298,7 +298,7 @@
 				android:gravity="center"
 				android:scaleType="fitCenter"
 				android:src="@mipmap/headhunt"
-				android:background="@drawable/border"
+				android:background="@drawable/border_grey"
 				android:clipToOutline="true" />
 
 			<TextView
