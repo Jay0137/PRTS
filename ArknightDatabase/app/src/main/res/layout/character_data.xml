@@ -20,17 +20,36 @@
 			android:layout_marginTop="6dp"
 			android:layout_marginEnd="6dp"
 			android:layout_marginBottom="6dp"
-			android:background="@drawable/border"
+			android:background="@drawable/border_grey"
 			android:clipToOutline="true"
 			android:contentDescription="@string/back"
 			android:gravity="center"
 			android:scaleType="fitCenter"
 			android:src="@mipmap/back_button" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center">
+
+		<TextView
+			android:id="@+id/charactersName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="@string/Name"
+			android:textSize="30sp"/>
+			</LinearLayout>
 	</LinearLayout>
 
 	<ScrollView
 		android:layout_width="match_parent"
-		android:layout_height="match_parent">
+		android:layout_height="match_parent"
+		android:layout_marginTop="6dp"
+		android:layout_marginBottom="6dp"
+		android:layout_marginStart="6dp"
+		android:layout_marginEnd="6dp"
+		android:scrollbars="vertical">
 
 		<LinearLayout
 			android:layout_width="match_parent"
@@ -39,6 +58,7 @@
 			android:layout_marginTop="6dp"
 			android:layout_marginEnd="6dp"
 			android:layout_marginBottom="6dp"
+			android:padding="3dp"
 			android:gravity="center_horizontal"
 			android:orientation="vertical">
 
@@ -46,7 +66,9 @@
 			<FrameLayout
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_gravity="center">
+				android:layout_gravity="center"
+				android:layout_marginTop="6dp"
+				android:layout_marginBottom="6dp">
 
 				<ImageView
 					android:id="@+id/characterImage"
@@ -57,16 +79,18 @@
 					android:layout_marginEnd="6dp"
 					android:layout_marginBottom="6dp"
 					android:contentDescription="@string/characters"
-					android:scaleType="centerCrop"/>
+					android:scaleType="centerCrop" />
 			</FrameLayout>
 
 			<!--Name-->
+			<!--
 			<LinearLayout
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginTop="6dp"
-				android:orientation="horizontal">
-				<!--max width 300dp-->
+				android:orientation="horizontal"> -->
+			<!--max width 300dp-->
+			<!--
 				<TextView
 					android:layout_width="150dp"
 					android:layout_height="wrap_content"
@@ -82,6 +106,7 @@
 					android:text="@string/Name"
 					android:textSize="20sp" />
 			</LinearLayout>
+	-->
 
 			<!--bar-->
 			<LinearLayout
@@ -90,6 +115,7 @@
 				android:layout_marginStart="3dp"
 				android:layout_marginTop="6dp"
 				android:layout_marginEnd="3dp"
+				android:background="@drawable/border_indigo"
 				android:gravity="center"
 				android:orientation="horizontal">
 
@@ -101,165 +127,176 @@
 					android:textSize="20sp" />
 			</LinearLayout>
 
-			<!--gender-->
 			<LinearLayout
-				android:layout_width="wrap_content"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
+				android:layout_marginStart="3dp"
 				android:layout_marginTop="6dp"
-				android:orientation="horizontal">
-				<!--max width 300dp-->
-				<TextView
-					android:layout_width="150dp"
-					android:layout_height="wrap_content"
-					android:gravity="start"
-					android:text="@string/gender"
-					android:textSize="20sp" />
+				android:layout_marginEnd="3dp"
+				android:padding="6dp"
+				android:background="@drawable/border_indigo_2"
+				android:orientation="vertical">
 
-				<TextView
-					android:id="@+id/Gender"
-					android:layout_width="150dp"
+				<!--gender-->
+				<LinearLayout
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:gravity="center"
-					android:text="@string/gender"
-					android:textSize="20sp" />
-			</LinearLayout>
+					android:layout_marginTop="6dp"
+					android:orientation="horizontal">
+					<!--max width 300dp-->
+					<TextView
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="start"
+						android:text="@string/gender"
+						android:textSize="20sp" />
 
-			<!--Place of Birth-->
-			<LinearLayout
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="2dp"
-				android:orientation="horizontal">
-				<!--max width 300dp-->
-				<TextView
-					android:layout_width="150dp"
-					android:layout_height="wrap_content"
-					android:gravity="start"
-					android:text="@string/birthplace"
-					android:textSize="20sp" />
+					<TextView
+						android:id="@+id/Gender"
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/gender"
+						android:textSize="20sp" />
+				</LinearLayout>
 
-				<TextView
-					android:id="@+id/BirthPlace"
-					android:layout_width="150dp"
+				<!--Place of Birth-->
+				<LinearLayout
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:gravity="center"
-					android:text="@string/birthplace"
-					android:textSize="20sp" />
-			</LinearLayout>
+					android:layout_marginTop="2dp"
+					android:orientation="horizontal">
+					<!--max width 300dp-->
+					<TextView
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="start"
+						android:text="@string/birthplace"
+						android:textSize="20sp" />
 
-			<!--birthday-->
-			<LinearLayout
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="2dp"
-				android:orientation="horizontal">
-				<!--max width 300dp-->
-				<TextView
-					android:layout_width="150dp"
-					android:layout_height="wrap_content"
-					android:gravity="start"
-					android:text="@string/birthday"
-					android:textSize="20sp" />
+					<TextView
+						android:id="@+id/BirthPlace"
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/birthplace"
+						android:textSize="20sp" />
+				</LinearLayout>
 
-				<TextView
-					android:id="@+id/BirthDay"
-					android:layout_width="150dp"
+				<!--birthday-->
+				<LinearLayout
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:gravity="center"
-					android:text="@string/birthday"
-					android:textSize="20sp" />
-			</LinearLayout>
+					android:layout_marginTop="2dp"
+					android:orientation="horizontal">
+					<!--max width 300dp-->
+					<TextView
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="start"
+						android:text="@string/birthday"
+						android:textSize="20sp" />
 
-			<!--Race-->
-			<LinearLayout
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="2dp"
-				android:orientation="horizontal">
-				<!--max width 300dp-->
-				<TextView
-					android:layout_width="150dp"
-					android:layout_height="wrap_content"
-					android:gravity="start"
-					android:text="@string/race"
-					android:textSize="20sp" />
+					<TextView
+						android:id="@+id/BirthDay"
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/birthday"
+						android:textSize="20sp" />
+				</LinearLayout>
 
-				<TextView
-					android:id="@+id/Race"
-					android:layout_width="150dp"
+				<!--Race-->
+				<LinearLayout
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:gravity="center"
-					android:text="@string/race"
-					android:textSize="20sp" />
-			</LinearLayout>
+					android:layout_marginTop="2dp"
+					android:orientation="horizontal">
+					<!--max width 300dp-->
+					<TextView
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="start"
+						android:text="@string/race"
+						android:textSize="20sp" />
 
-			<!--Height-->
-			<LinearLayout
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="2dp"
-				android:orientation="horizontal">
-				<!--max width 300dp-->
-				<TextView
-					android:layout_width="150dp"
-					android:layout_height="wrap_content"
-					android:gravity="start"
-					android:text="@string/height"
-					android:textSize="20sp" />
+					<TextView
+						android:id="@+id/Race"
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/race"
+						android:textSize="20sp" />
+				</LinearLayout>
 
-				<TextView
-					android:id="@+id/Height"
-					android:layout_width="150dp"
+				<!--Height-->
+				<LinearLayout
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:gravity="center"
-					android:text="@string/height"
-					android:textSize="20sp" />
-			</LinearLayout>
+					android:layout_marginTop="2dp"
+					android:orientation="horizontal">
+					<!--max width 300dp-->
+					<TextView
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="start"
+						android:text="@string/height"
+						android:textSize="20sp" />
 
-			<!--Combat Experience-->
-			<LinearLayout
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="2dp"
-				android:orientation="horizontal">
-				<!--max width 300dp-->
-				<TextView
-					android:layout_width="150dp"
-					android:layout_height="wrap_content"
-					android:gravity="start"
-					android:text="@string/combat_experience"
-					android:textSize="20sp" />
+					<TextView
+						android:id="@+id/Height"
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/height"
+						android:textSize="20sp" />
+				</LinearLayout>
 
-				<TextView
-					android:id="@+id/CombatExperience"
-					android:layout_width="150dp"
+				<!--Combat Experience-->
+				<LinearLayout
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:gravity="center"
-					android:text="@string/combat_experience"
-					android:textSize="20sp" />
-			</LinearLayout>
+					android:layout_marginTop="2dp"
+					android:orientation="horizontal">
+					<!--max width 300dp-->
+					<TextView
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="start"
+						android:text="@string/combat_experience"
+						android:textSize="20sp" />
 
-			<!--Infection Status-->
-			<LinearLayout
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="2dp"
-				android:orientation="horizontal">
-				<!--max width 300dp-->
-				<TextView
-					android:layout_width="150dp"
-					android:layout_height="wrap_content"
-					android:gravity="start"
-					android:text="@string/infection_status"
-					android:textSize="20sp" />
+					<TextView
+						android:id="@+id/CombatExperience"
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/combat_experience"
+						android:textSize="20sp" />
+				</LinearLayout>
 
-				<TextView
-					android:id="@+id/InfectionStatus"
-					android:layout_width="150dp"
+				<!--Infection Status-->
+				<LinearLayout
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:gravity="center"
-					android:text="@string/infection_status"
-					android:textSize="20sp" />
+					android:layout_marginTop="2dp"
+					android:orientation="horizontal">
+					<!--max width 300dp-->
+					<TextView
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="start"
+						android:text="@string/infection_status"
+						android:textSize="20sp" />
+
+					<TextView
+						android:id="@+id/InfectionStatus"
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/infection_status"
+						android:textSize="20sp" />
+				</LinearLayout>
 			</LinearLayout>
 
 			<!--bar-->
@@ -269,6 +306,7 @@
 				android:layout_marginStart="3dp"
 				android:layout_marginTop="6dp"
 				android:layout_marginEnd="3dp"
+				android:background="@drawable/border_indigo"
 				android:gravity="center"
 				android:orientation="horizontal">
 
@@ -280,142 +318,153 @@
 					android:textSize="20sp" />
 			</LinearLayout>
 
-			<!--Strength-->
 			<LinearLayout
-				android:layout_width="wrap_content"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
+				android:layout_marginStart="3dp"
 				android:layout_marginTop="6dp"
-				android:orientation="horizontal">
-				<!--max width 300dp-->
-				<TextView
-					android:layout_width="150dp"
-					android:layout_height="wrap_content"
-					android:gravity="start"
-					android:text="@string/strength"
-					android:textSize="20sp" />
+				android:layout_marginEnd="3dp"
+				android:padding="6dp"
+				android:background="@drawable/border_indigo_2"
+				android:orientation="vertical">
 
-				<TextView
-					android:id="@+id/Strength"
-					android:layout_width="150dp"
+				<!--Strength-->
+				<LinearLayout
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:gravity="center"
-					android:text="@string/strength"
-					android:textSize="20sp" />
-			</LinearLayout>
+					android:layout_marginTop="6dp"
+					android:orientation="horizontal">
+					<!--max width 300dp-->
+					<TextView
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="start"
+						android:text="@string/strength"
+						android:textSize="20sp" />
 
-			<!--Mobility-->
-			<LinearLayout
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="6dp"
-				android:orientation="horizontal">
-				<!--max width 300dp-->
-				<TextView
-					android:layout_width="150dp"
-					android:layout_height="wrap_content"
-					android:gravity="start"
-					android:text="@string/mobility"
-					android:textSize="20sp" />
+					<TextView
+						android:id="@+id/Strength"
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/strength"
+						android:textSize="20sp" />
+				</LinearLayout>
 
-				<TextView
-					android:id="@+id/Mobility"
-					android:layout_width="150dp"
+				<!--Mobility-->
+				<LinearLayout
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:gravity="center"
-					android:text="@string/mobility"
-					android:textSize="20sp" />
-			</LinearLayout>
+					android:layout_marginTop="6dp"
+					android:orientation="horizontal">
+					<!--max width 300dp-->
+					<TextView
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="start"
+						android:text="@string/mobility"
+						android:textSize="20sp" />
 
-			<!--Endurance-->
-			<LinearLayout
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="6dp"
-				android:orientation="horizontal">
-				<!--max width 300dp-->
-				<TextView
-					android:layout_width="150dp"
-					android:layout_height="wrap_content"
-					android:gravity="start"
-					android:text="@string/endurance"
-					android:textSize="20sp" />
+					<TextView
+						android:id="@+id/Mobility"
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/mobility"
+						android:textSize="20sp" />
+				</LinearLayout>
 
-				<TextView
-					android:id="@+id/Endurance"
-					android:layout_width="150dp"
+				<!--Endurance-->
+				<LinearLayout
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:gravity="center"
-					android:text="@string/endurance"
-					android:textSize="20sp" />
-			</LinearLayout>
+					android:layout_marginTop="6dp"
+					android:orientation="horizontal">
+					<!--max width 300dp-->
+					<TextView
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="start"
+						android:text="@string/endurance"
+						android:textSize="20sp" />
 
-			<!--Tactical acumen-->
-			<LinearLayout
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="6dp"
-				android:orientation="horizontal">
-				<!--max width 300dp-->
-				<TextView
-					android:layout_width="150dp"
-					android:layout_height="wrap_content"
-					android:gravity="start"
-					android:text="@string/tactical_acumen"
-					android:textSize="20sp" />
+					<TextView
+						android:id="@+id/Endurance"
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/endurance"
+						android:textSize="20sp" />
+				</LinearLayout>
 
-				<TextView
-					android:id="@+id/TacticalAcumen"
-					android:layout_width="150dp"
+				<!--Tactical acumen-->
+				<LinearLayout
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:gravity="center"
-					android:text="@string/tactical_acumen"
-					android:textSize="20sp" />
-			</LinearLayout>
+					android:layout_marginTop="6dp"
+					android:orientation="horizontal">
+					<!--max width 300dp-->
+					<TextView
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="start"
+						android:text="@string/tactical_acumen"
+						android:textSize="20sp" />
 
-			<!--Combat skill-->
-			<LinearLayout
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="6dp"
-				android:orientation="horizontal">
-				<!--max width 300dp-->
-				<TextView
-					android:layout_width="150dp"
-					android:layout_height="wrap_content"
-					android:gravity="start"
-					android:text="@string/combat_skill"
-					android:textSize="20sp" />
+					<TextView
+						android:id="@+id/TacticalAcumen"
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/tactical_acumen"
+						android:textSize="20sp" />
+				</LinearLayout>
 
-				<TextView
-					android:id="@+id/CombatSkill"
-					android:layout_width="150dp"
+				<!--Combat skill-->
+				<LinearLayout
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:gravity="center"
-					android:text="@string/combat_skill"
-					android:textSize="20sp" />
-			</LinearLayout>
+					android:layout_marginTop="6dp"
+					android:orientation="horizontal">
+					<!--max width 300dp-->
+					<TextView
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="start"
+						android:text="@string/combat_skill"
+						android:textSize="20sp" />
 
-			<!--Arts adaptability-->
-			<LinearLayout
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="6dp"
-				android:orientation="horizontal">
-				<!--max width 300dp-->
-				<TextView
-					android:layout_width="150dp"
-					android:layout_height="wrap_content"
-					android:gravity="start"
-					android:text="@string/arts_adaptability"
-					android:textSize="20sp" />
+					<TextView
+						android:id="@+id/CombatSkill"
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/combat_skill"
+						android:textSize="20sp" />
+				</LinearLayout>
 
-				<TextView
-					android:id="@+id/ArtsAdaptability"
-					android:layout_width="150dp"
+				<!--Arts adaptability-->
+				<LinearLayout
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:gravity="center"
-					android:text="@string/arts_adaptability"
-					android:textSize="20sp" />
+					android:layout_marginTop="6dp"
+					android:orientation="horizontal">
+					<!--max width 300dp-->
+					<TextView
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="start"
+						android:text="@string/arts_adaptability"
+						android:textSize="20sp" />
+
+					<TextView
+						android:id="@+id/ArtsAdaptability"
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/arts_adaptability"
+						android:textSize="20sp" />
+				</LinearLayout>
 			</LinearLayout>
 
 			<!--bar-->
@@ -425,6 +474,7 @@
 				android:layout_marginStart="3dp"
 				android:layout_marginTop="6dp"
 				android:layout_marginEnd="3dp"
+				android:background="@drawable/border_indigo"
 				android:gravity="center"
 				android:orientation="horizontal">
 
@@ -436,50 +486,62 @@
 					android:textSize="20sp" />
 			</LinearLayout>
 
-			<!--Nation-->
 			<LinearLayout
-				android:layout_width="wrap_content"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
+				android:layout_marginStart="3dp"
 				android:layout_marginTop="6dp"
-				android:orientation="horizontal">
-				<!--max width 300dp-->
-				<TextView
-					android:layout_width="150dp"
-					android:layout_height="wrap_content"
-					android:gravity="start"
-					android:text="@string/nation"
-					android:textSize="20sp" />
+				android:layout_marginBottom="6dp"
+				android:layout_marginEnd="3dp"
+				android:padding="6dp"
+				android:background="@drawable/border_indigo_2"
+				android:orientation="vertical">
 
-				<TextView
-					android:id="@+id/Nation"
-					android:layout_width="150dp"
+				<!--Nation-->
+				<LinearLayout
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:gravity="center"
-					android:text="@string/nation"
-					android:textSize="20sp" />
-			</LinearLayout>
+					android:layout_marginTop="6dp"
+					android:orientation="horizontal">
+					<!--max width 300dp-->
+					<TextView
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="start"
+						android:text="@string/nation"
+						android:textSize="20sp" />
 
-			<!--Group-->
-			<LinearLayout
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginTop="2dp"
-				android:orientation="horizontal">
-				<!--max width 300dp-->
-				<TextView
-					android:layout_width="150dp"
-					android:layout_height="wrap_content"
-					android:gravity="start"
-					android:text="@string/group"
-					android:textSize="20sp" />
+					<TextView
+						android:id="@+id/Nation"
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/nation"
+						android:textSize="20sp" />
+				</LinearLayout>
 
-				<TextView
-					android:id="@+id/Group"
-					android:layout_width="150dp"
+				<!--Group-->
+				<LinearLayout
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:gravity="center"
-					android:text="@string/group"
-					android:textSize="20sp" />
+					android:layout_marginTop="2dp"
+					android:orientation="horizontal">
+					<!--max width 300dp-->
+					<TextView
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="start"
+						android:text="@string/group"
+						android:textSize="20sp" />
+
+					<TextView
+						android:id="@+id/Group"
+						android:layout_width="150dp"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:text="@string/group"
+						android:textSize="20sp" />
+				</LinearLayout>
 			</LinearLayout>
 
 		</LinearLayout>
